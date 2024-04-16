@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Family_EventsApp.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Family Chart & Events</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <style>
+     .formbackgdimg {
+         background-image: url("Images_bg/pngtree-abstract-christmas-tree-in-a-3d-snow-globe-image_13509687.png");   
+         background-size:1500px;
+     }
+ </style>
+</head>
+<body class="formbackgdimg">
+    <div id="content">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">           
+        </asp:ContentPlaceHolder>
+    </div>   
+    <footer>
+        <!-- Footer Content -->
+    </footer>
+</body>
+</html>
