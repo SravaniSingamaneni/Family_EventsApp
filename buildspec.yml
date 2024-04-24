@@ -1,0 +1,14 @@
+﻿version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      dotnet: 3.1
+  build:
+    commands:
+      - dotnet restore
+      - dotnet build
+      - dotnet publish -c Release -o ./publish_output
+artifacts:
+  files:
+    - '**/*'
